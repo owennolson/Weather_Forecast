@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+body {
+
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.header {
+    width: 100%;
+    background-color: rgb(115, 189, 164);
+    padding: 2rem;
+}
+.header h1 {
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+
+    column-span: all;
+}
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    columns: 6;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.searchArea {
+    height: 10rem;
+    margin: 2rem;
+    display: block;
+    border-color: black;
+    width: 25rem;
+}
+.searchArea input {
+    border-color: black;
+    height: 3rem;
+    width: 20rem;
+    border-radius: .5rem;
+    border-style: inset;
+    margin: 2rem;
+    background-color: rgb(115, 189, 164);
+}
+.searchArea button {
+    height: 3rem;
+    width: 20rem;
+    border-radius: .5rem;
+    border-style: inset;
+    margin: 0rem 2rem 2rem 2rem;
+    background-color: rgb(115, 189, 164);
+    border-color: black;
+}
+.searchArea button:hover {
+    background-color: rgb(81, 148, 125);
+}
+.searchHistoryArea {
+    margin: 2rem;
+    flex-direction: row-reverse;
+    border-color: black;
+    border-radius: .5rem;
+    width: 25rem;
+    height: 20rem;
+}
+.searchHistoryArea li {
+    margin: 2rem;
+    border-style: inset;
+    height: 3rem;
+    width: 20rem;
+    background-color: rgb(115, 189, 164);
+    border-radius: .5rem;
+    list-style: none;
+    text-align: center;
+    font-size: 2rem;
+    border-color: black;
+}
+.searchResults {
+    display: flex;
+    margin: 2rem;
+    height: 15rem;
+    width: 50rem;
+    border-radius: .5rem;
+    border-style: inset;
+    background-color: rgb(115, 189, 164);
+    border-color: black;
+}
+.searchResults h2 {
+    display: inline-block;
+    margin: 1rem;
+    width: 20rem;
+    height: 3rem;
+}
+.searchResults p {
+    display: inline-block;
+    flex-direction: row;
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem;
+}
+.searchResults img {
+    display: inline-block;
+    width: 20rem;
+    height: 10rem;
+    margin: 1rem;
+}
+.fiveDayForecast {
+    display: flex;
+    margin: 2rem;
+    height: 15rem;
+    width: 55rem;
+}
+
+
+.fiveDayForecast li {
+    display: inline-block;
+    border-style: inset;
+    list-style: none;
+    flex-direction: column;
+    height: 10rem;
+    width: 7rem;
+    margin: 2rem 3.1rem 0rem 0rem;
+    border-radius: .5rem;
+    background-color: rgb(115, 189, 164);
+    border-color: black;
+
+}
+.fiveDayForecast li img {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1.75rem;
+}
+.fiveDayForecast li p {
+    margin: .5rem;
+    font-size: small;
+}
+footer {
+    margin-top: 11%;
+    text-align: center;
+}
