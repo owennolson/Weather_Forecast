@@ -1,17 +1,17 @@
-var userInput = $('userInput');
+var searchBtn = $('searchBtn');
+var userInput = $('searchInput');
+
 
 
 function getApi()  {
-   var getURL = 'https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={318d9e9397b1f9f0ae20f535e9a221ec}';
+   var getURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + userInput.value + '&APPID=3eb6b9a5a18a639145c452fbac9d924a';
     fetch(getURL)
         .then(function (response) {
         return response.json();
         })
         .then(function (data) {
             console.log(data);
-            
-            });
-
+        });
 }
 
-userInput.on('click', getApi());
+searchBtn.on('click', getApi());

@@ -4,13 +4,12 @@
     margin: 0rem;
 }
 body {
-
+    background-image: url("./Images/pexels-photo-96622.jpeg");
     font-family: 'Courier New', Courier, monospace;
 
 }
 .header {
     width: 100%;
-    background-color: rgb(115, 189, 164);
     padding: 2rem;
 }
 .header h1 {
@@ -43,7 +42,8 @@ main {
     border-radius: .5rem;
     border-style: inset;
     margin: 2rem;
-    background-color: rgb(115, 189, 164);
+    background-color: rgb(107, 187, 201);
+    opacity: 50%;
 }
 .searchArea button {
     height: 3rem;
@@ -51,7 +51,8 @@ main {
     border-radius: .5rem;
     border-style: inset;
     margin: 0rem 2rem 2rem 2rem;
-    background-color: rgb(115, 189, 164);
+    background-color: rgb(107, 187, 201);
+    opacity: 50%;
     border-color: black;
 }
 .searchArea button:hover {
@@ -70,7 +71,8 @@ main {
     border-style: inset;
     height: 3rem;
     width: 20rem;
-    background-color: rgb(115, 189, 164);
+    background-color: rgb(152, 190, 197);
+    opacity: 60%;
     border-radius: .5rem;
     list-style: none;
     text-align: center;
@@ -84,7 +86,8 @@ main {
     width: 50rem;
     border-radius: .5rem;
     border-style: inset;
-    background-color: rgb(115, 189, 164);
+    background-color: rgb(107, 187, 201), opacity;
+    opacity: 50%;
     border-color: black;
 }
 .searchResults h2 {
@@ -123,7 +126,8 @@ main {
     width: 7rem;
     margin: 2rem 3.1rem 0rem 0rem;
     border-radius: .5rem;
-    background-color: rgb(115, 189, 164);
+    background-color: rgb(152, 190, 197);
+    opacity: 60%;
     border-color: black;
 
 }
