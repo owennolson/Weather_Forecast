@@ -1,5 +1,6 @@
 var searchBtn = $('#searchBtn');
 var userInput = $('#searchInput');
+var cities = [];
 
 
 
@@ -75,22 +76,24 @@ function saveName(){
     var value = userInput.val();
     console.log(value);
     
-    var value = localStorage.setItem("userValue" , JSON.stringify([value]));
+    var cities = localStorage.setItem("userValue" , JSON.stringify([value]));
     displayList();
 };
 
 
 function displayList() {
-    var value = localStorage.getItem("userValue");
-    value = JSON.parse(value);
-    console.log(value);
-    for(i=0; i > 5; i++) {
+    cities = JSON.parse(localStorage.getItem("userValue")) || [];
+    console.log(cities);
+    for (var i = 0; i < cities.length; i++) {
         var list = document.createElement("li");
-        list.textContent = value;
+        list.textContent = cities[i];
         var ul = $("#historyList");
-        ul.appendChild(list);
+        ul.append(list);
     }
-
 }
+displayList();
 localStorage.clear()
-searchBtn.on('click', getApi, saveName);
+searchBtn.on('click', function() {
+    getApi();
+    saveName();
+  });
