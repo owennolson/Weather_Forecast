@@ -72,20 +72,25 @@ function getFiveDayApi() {
 
 function saveName(){
     //event.preventDefault();
-    var value = userInput.value;
+    var value = userInput.val();
     console.log(value);
-    var value = localStorage.setItem("userValue" , JSON.stringify[value]);
+    
+    var value = localStorage.setItem("userValue" , JSON.stringify([value]));
+    displayList();
 };
+
 
 function displayList() {
     var value = localStorage.getItem("userValue");
     value = JSON.parse(value);
     console.log(value);
-    var list = document.createElement("li");
-    list.textContent = value;
-    var ul = $("#historyList");
-    ul.appendChild(list);
-}
+    for(i=0; i > 5; i++) {
+        var list = document.createElement("li");
+        list.textContent = value;
+        var ul = $("#historyList");
+        ul.appendChild(list);
+    }
 
-displayList();
+}
+localStorage.clear()
 searchBtn.on('click', getApi, saveName);
