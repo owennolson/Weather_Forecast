@@ -6,6 +6,7 @@
 body {
     background-image: url("./Images/pexels-photo-96622.jpeg");
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 
 }
 .header {
@@ -86,7 +87,7 @@ main {
     width: 50rem;
     border-radius: .5rem;
     border-style: inset;
-    background-color: rgb(107, 187, 201), opacity;
+    background-color: rgb(107, 187, 201);
     opacity: 50%;
     border-color: black;
 }
